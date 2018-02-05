@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Post new job</title>
+<link rel="stylesheet" type="text/css" href="tryonce.css" /> 
+</head>
+
+<body>
+<table class="tableform">
+<form name="post_form" action="post_job.html" method="get">
+	<tr>
+		<th><b>Post a job</b></th>
+    </tr>
+	<tr> 
+    	<td> Category... </td> 
+    </tr>
+	<tr>
+		<td><select name="occupation">
+			<option value="default"> Selection... </option>
+			<option value="dev"> Developer </option>
+			<option value="tst"> Tester </option>
+			<option value="mng"> Manager </option>
+		</select></td>
+	</tr>
+	<tr> 
+    	<td> Title </td> 
+    </tr>
+	<tr>
+		<td> <input type="text" name="title" size="25" maxlength="25" class="textbox"> </td>
+	</tr>
+	<tr> 
+    	<td>Description </td> 
+    </tr>
+	<tr> 
+    	<td> <textarea cols="50" rows="5" name="message" wrap="off"> </textarea> </td>
+    </tr>
+	<tr> 
+		<td> <input type="radio" name="pop" value="pub"> public
+		<input type="radio" name="pop" value="pri" checked="checked"> private </td>
+	</tr> 
+	<tr>
+		<td> <br>
+		<input type="submit" value="Post" class="button"></td>
+	</tr>
+</form>
+</table>
+</body>
+</html>
